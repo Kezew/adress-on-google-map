@@ -1,0 +1,27 @@
+/* Set the size of the div element that contains the map */
+#map {
+ height: 500px;  /* The height is 400 pixels */
+ width: 90%;  /* The width is the width of the web page */
+ margin-top: 20px;
+}
+body h2 {
+ color: #17a2b8;
+ font-size: 16;
+ margin: 20px 0px 20px;
+}
+
+#address {
+ border: 1.5px solid #17a2b8;
+ border-radius: 4px;
+ width: 300px;
+ height: 35px;
+}
+
+#show-in-map {
+ height: 35px;
+ vertical-align: baseline;
+}
+
+.box {
+ padding-left: 20px;
+}

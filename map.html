@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="map.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSCmtxM00sTEJeEnm0oLerUZAcuhv_A4c"></script>
+  <title></title>
+</head>
+
+<body>
+  <div class="box">
+   <h2>Google Geocoding és Directions API használata – Tóni</h2>
+   <div id="gpsgo">
+     <input id="address" type="text" placeholder=" Írd be a címet!">
+     <button id='show-in-map' class="btn btn-info">Mutasd a térképen!</button>
+   </div>
+ </div>
+
+ <br>
+ <div class="box">
+   <div id="map">
+   </div>
+ </div>
+
+ <div id="alert-modal" class="modal" tabindex="-1" role="dialog">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title">Figyelem!</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body">
+         <p>Nem található ilyen hely a térképen.</p>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-info" data-dismiss="modal">Ok.</button>
+       </div>
+     </div>
+   </div>
+ </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="map.js"></script>
+</body>
+</html>
